@@ -18,7 +18,7 @@ import { JoiValidationShema } from './config/joi.validation';
     ServeStaticModule.forRoot({ 
       rootPath: join(__dirname, '..', 'public') 
     }),
-    MongooseModule.forRoot(process.env.MONGO_URI),
+    MongooseModule.forRoot(process.env.MONGODB),
     PokemonModule,
     CommonModule,
     SeedModule,
